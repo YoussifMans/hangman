@@ -104,7 +104,7 @@ def gameLoop():
 		displayGuessedWord = " ".join(guessedWord)
 		print(f'You\'ve Guessed: \n{displayGuessedWord}\n')
 	
-		print(f'You can\'t use:\n{" ".join(incorrectGuesses)}\nbecause you\'ve proven them to be not in the word!\n')
+		print(f'You can\'t use:\n{" ".join(incorrectGuesses)}\nbecause you\'ve proven them to be not in the word!\n') if len(incorrectGuesses) > 0 else print()
 
 		if "".join(guessedWord) == word:
 			print('Congratulations! You Win!')
